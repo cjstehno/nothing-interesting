@@ -1,0 +1,19 @@
+[project]
+name = "word-counter"
+version = "0.1.0"
+description = "CLI app that counts words in input text"
+readme = "README.md"
+authors = [
+    { name = "Codex", email = "codex@openai.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.1.7",
+]
+
+[project.scripts]
+word-counter = "word_counter:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
